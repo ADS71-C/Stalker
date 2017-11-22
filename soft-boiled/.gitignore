@@ -1,4 +1,0 @@
-
-*.pyc
-doc/_build/*
-train_dataset_small
