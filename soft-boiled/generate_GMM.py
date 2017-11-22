@@ -28,7 +28,7 @@ for filename in os.listdir('dataset'):
         tweets_df = chunk
 
 tweets_df.createOrReplaceTempView('my_tweets')
-gmm_model = gmm.train_gmm(spark, 'my_tweets', ['user.location', 'text'], min_occurrences=5, max_num_components=20)
+gmm_model = gmm.train_gmm(spark, 'my_tweets', ['user.location', 'text'], min_occurrences=5, max_num_components=12)
 
 
 # Save model for future prediction use
